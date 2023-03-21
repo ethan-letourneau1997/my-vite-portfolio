@@ -1,0 +1,11 @@
+//> bits
+@use "./bits/base.scss";
+//> modules
+@use "./modules/nav.scss";
+//> variables
+@use "./variables/typography.scss";
+@use "./variables/colors.scss";
+//> sections
+@use "./sections/home.scss";
+@use "./sections/skills.scss";
+@use "./sections/projects.scss";

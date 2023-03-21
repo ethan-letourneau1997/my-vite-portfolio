@@ -1,0 +1,101 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/typography.scss" as *;
+@use "../utilities/breakpoints.scss" as *;
+
+.Skills {
+  background-color: $background;
+  border-radius: 15px;
+
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  .card-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    width: 20rem;
+
+    background-color: var(--foreground) !important;
+    background: #14171f;
+    background: linear-gradient(
+      45deg,
+      rgba(13, 15, 17, 1) 69%,
+      rgba(23, 25, 27, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(13, 15, 17, 1) 69%,
+      rgba(23, 25, 27, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(13, 15, 17, 1) 69%,
+      rgba(23, 25, 27, 1) 100%
+    );
+    border: 0;
+
+    // border-color: #9b51e0;
+    filter: 'progid: DXImageTransform.Microsoft.gradient( startColorstr="#14171F", endColorstr="#1C212B", GradientType=1 )';
+    border-radius: 12px;
+    // padding-bottom: 0.3rem;
+
+    .card-body {
+      // padding-top: 2rem;
+      // padding-left: 1.5rem;
+
+      .card-title {
+        // padding-bottom: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: $font-size-lg;
+      }
+
+      hr {
+        color: rgba(255, 255, 255, 0.401);
+      }
+
+      img {
+        height: 30px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+  .web-card {
+    .card-title {
+      color: $red;
+    }
+  }
+
+  .code-card {
+    .card-title {
+      color: $green;
+    }
+  }
+
+  .data-card {
+    .card-title {
+      color: $yellow;
+    }
+  }
+}

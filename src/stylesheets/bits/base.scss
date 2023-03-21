@@ -1,0 +1,22 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/typography.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  color: $txt-primary;
+}
+
+.App {
+  background-color: $background;
+}
+
+h2 {
+  font-size: $font-size-xxl;
+}
+
+.sub {
+  font-style: italic;
+  font-weight: 300;
+  color: $txt-secondary;
+}

@@ -1,0 +1,12 @@
+@use "../variables/colors.scss" as *;
+.navbar {
+  background-color: $none !important;
+
+  .nav-link {
+    color: $txt-primary !important;
+  }
+
+  .navbar-brand {
+    color: $blue;
+  }
+}

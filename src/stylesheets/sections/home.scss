@@ -1,0 +1,69 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/typography.scss" as *;
+@use "../utilities/breakpoints.scss" as *;
+
+.Home {
+  // padding-top: 10rem;
+  // padding-bottom: 15rem;
+
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  @include media-min($breakpoint-md) {
+    min-height: 50vh;
+    flex-direction: row;
+  }
+
+  .title-row {
+    padding-top: 10rem;
+    width: 100%;
+
+    @include media-min($breakpoint-md) {
+      padding-top: 0;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 50px;
+
+      font-size: $font-size-xl;
+
+      @include media-min($breakpoint-sm) {
+        font-size: $font-size-xxxl;
+        letter-spacing: -2px;
+        line-height: 4.5rem;
+      }
+
+      @include media-min($breakpoint-md) {
+      }
+
+      span {
+        color: $blue;
+      }
+    }
+  }
+
+  .btn-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+
+    @include media-min($breakpoint-md) {
+      display: none;
+    }
+
+    .btn {
+      width: fit-content;
+    }
+  }
+}

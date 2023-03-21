@@ -1,0 +1,101 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/typography.scss" as *;
+
+.Projects {
+  background-color: $background;
+  border-radius: 15px;
+
+  h2 {
+    text-align: center;
+  }
+
+  .MarchMadness {
+    text-align: center;
+
+    .pre-sub {
+      color: $purple;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: $font-size-xxl;
+      font-weight: 600;
+    }
+
+    .content {
+      .MarchMadnessDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .features-row {
+          span {
+            font-weight: 600;
+            font-size: $font-size-md;
+          }
+          div:nth-of-type(1) span {
+            color: $red;
+          }
+          div:nth-of-type(2) span {
+            color: $blue;
+          }
+          div:nth-of-type(3) span {
+            color: $green;
+          }
+          div:nth-of-type(4) span {
+            color: $yellow;
+          }
+          p {
+            color: $txt-primary;
+          }
+        }
+        .icon-row {
+          .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          svg {
+            font-size: $font-size-xl;
+          }
+
+          .aws-icon {
+            font-size: $font-size-lg;
+          }
+          .bootstrap-icon {
+            font-size: $font-size-lg;
+          }
+        }
+      }
+      .btn-row {
+        justify-content: center;
+
+        .btn {
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          border: 1px solid $txt-secondary;
+          color: 1px solid $txt-secondary;
+        }
+
+        .btn-demo:hover {
+          color: $blue;
+          background-color: $none;
+          border: 1px solid $blue;
+        }
+
+        .btn-code:hover {
+          color: $green;
+          background-color: $none;
+          border: 1px solid $green;
+        }
+      }
+    }
+
+    .img-col {
+      // padding: 2rem;
+    }
+  }
+}
