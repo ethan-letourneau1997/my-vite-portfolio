@@ -12,6 +12,7 @@ import Nav from "./components/Nav";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import About from "./components/About";
 
 function App() {
   //> Particle effects
@@ -28,6 +29,7 @@ function App() {
       </div>
       <Skills />
       <Projects />
+      <About />
     </div>
   );
 }

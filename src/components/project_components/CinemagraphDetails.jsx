@@ -1,11 +1,9 @@
-import { Row, Col, Collapse, Button } from "react-bootstrap";
-import { useState } from "react";
+import { Row, Col, Button } from "react-bootstrap";
 
-import { Icon } from "@iconify/react";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
 
-function MarchMadnessDetails() {
+function CinemagraphDetails() {
   return (
     <Row className="MarchMadnessDetails pt-4">
       <Row className="features-row">
@@ -55,4 +53,4 @@ function MarchMadnessDetails() {
     </Row>
   );
 }
-export default MarchMadnessDetails;
+export default CinemagraphDetails;
