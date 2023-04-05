@@ -1,0 +1,104 @@
+/* Default animation styles */
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+  animation: fadeIn ease forwards;
+  animation-iteration-count: 1;
+}
+
+.one {
+  animation-duration: 5s;
+}
+
+.two {
+  animation-duration: 2s;
+}
+
+.three {
+  animation-duration: 2s;
+}
+
+.four {
+  animation-duration: 8s;
+}
+
+.five {
+  animation-duration: 9s;
+}
+
+.six {
+  animation-duration: 10s;
+}
+
+.seven {
+  animation-duration: 11s;
+}
+
+.eight {
+  animation-duration: 12s;
+}
+
+.slide-up {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.slide-up.slow {
+  animation: slide-up 3s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+.slide-up.medium {
+  animation: slide-up 3s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+.slide-up.fast {
+  animation: slide-up 3s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media query to disable animations below lg breakpoint */
+
+@media (max-width: 992px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight {
+    animation: none;
+  }
+
+  .slide-up {
+    animation: none;
+  }
+}

@@ -6,7 +6,7 @@ function Projects() {
   return (
     <Container fluid className="Projects">
       <MarchMadness />
-      <Cinemagraph />
+      <Cinemagraph id="cinegraph" />
     </Container>
   );
 }

@@ -1,4 +1,6 @@
+import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Link } from "react-scroll";
 
 function Navigation() {
   return (
@@ -8,23 +10,33 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="Home">Home</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                March Madness
+            <Nav.Link>
+              <Link to="Home" smooth={true} duration={500}>
+                Home
+              </Link>
+            </Nav.Link>
+            <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item>
+                <Link to="march-madness" smooth={true} duration={500}>
+                  March Madness
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Show Stopper
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Great Outdoors
+              <NavDropdown.Item>
+                <Link to="cinegraph" smooth={true} duration={500}>
+                  Cinegraph
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="About">About</Nav.Link>
+            <Nav.Link>
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
+
 export default Navigation;

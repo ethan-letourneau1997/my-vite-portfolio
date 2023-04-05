@@ -5,7 +5,14 @@
 //> variables
 @use "./variables/typography.scss";
 @use "./variables/colors.scss";
+//> misc
+@use "./misc/animations.scss";
 //> sections
 @use "./sections/home.scss";
 @use "./sections/skills.scss";
 @use "./sections/projects.scss";
+@use "./sections/about.scss";
+
+html {
+  scroll-behavior: smooth !important;
+}

@@ -5,15 +5,23 @@ function Home() {
     <Container fluid className="Home">
       <Row className="title-row">
         <h1>
-          i'm&nbsp;
-          <span>
-            ethan <span>letourneau</span>{" "}
+          <span className="one">i'm&nbsp;</span>
+          <span className="blue">
+            <span className="two">ethan </span>
+            <span className="three">letourneau</span>{" "}
           </span>
         </h1>
-        <h1>and i make websites.</h1>
+        <h1>
+          <span className="five">and&nbsp;</span>{" "}
+          <span className="six">i&nbsp;</span>
+          <span className="seven">make&nbsp;</span>{" "}
+          <span className="eight">websites.&nbsp;</span>
+        </h1>
       </Row>
       <Row className="btn-row">
-        <Button variant="outline-light">What can i do?</Button>
+        <Button href="#skills" variant="outline-light">
+          What can i do?
+        </Button>
       </Row>
     </Container>
   );

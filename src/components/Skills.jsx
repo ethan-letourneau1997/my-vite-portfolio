@@ -3,10 +3,10 @@ import checkBox from "../assets/misc/checkbox.png";
 
 function Skills() {
   return (
-    <Container className="Skills pt-5 mt-5">
+    <Container id="skills" className="Skills pt-5 mt-5">
       <Row>
         <Col className="card-col" xs={12} md={6} lg={4}>
-          <Card className="web-card p-2 pb-2">
+          <Card className="web-card p-2 pb-2 slide-up fast">
             <Card.Body>
               <Card.Title className="pb-3">Web</Card.Title>
               <Card.Subtitle>
@@ -40,7 +40,7 @@ function Skills() {
         </Col>
         <Col className="card-col" xs={12} sm={12} md={6} lg={4}>
           {/* REST API */}
-          <Card className="code-card p-2 pb-2">
+          <Card className="code-card p-2 pb-2 slide-up medium">
             <Card.Body>
               <Card.Title className="pb-3">Code</Card.Title>
               <Card.Subtitle>
@@ -72,7 +72,10 @@ function Skills() {
           </Card>
         </Col>
         <Col className="card-col" xs={12} sm={12} md={12} lg={4}>
-          <Card className="data-card p-2 pb-2" style={{ width: "20rem" }}>
+          <Card
+            className="data-card p-2 pb-2 slide-up slow"
+            style={{ width: "20rem" }}
+          >
             <Card.Body>
               <Card.Title className="pb-3">Data</Card.Title>
               <Card.Subtitle>

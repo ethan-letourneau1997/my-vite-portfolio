@@ -1,11 +1,18 @@
 import { Row, Col, Collapse, Button } from "react-bootstrap";
-import { useState } from "react";
 
-import { Icon } from "@iconify/react";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
 
 function MarchMadnessDetails() {
+  const handleClickCode = () => {
+    window.open(
+      "https://github.com/ethan-letourneau1997/march-madness-frontend",
+      "_blank"
+    );
+  };
+  const handleClickSite = () => {
+    window.open("http://draft-bracket.com/", "_blank");
+  };
   return (
     <Row className="MarchMadnessDetails pt-4">
       <Row className="features-row">
@@ -31,7 +38,7 @@ function MarchMadnessDetails() {
           </p>
         </Col>
         <Col md={6} className="d-flex flex-column gap-3 pt-4">
-          <span>Made With*</span>
+          <span>Made With</span>
           <p>Django, Postgres, Python, AWS, Bootstrap, HTML, CSS</p>
         </Col>
       </Row>
@@ -40,6 +47,7 @@ function MarchMadnessDetails() {
           size="lg"
           variant="outline-light d-flex gap-2"
           className="btn-demo"
+          onClick={handleClickSite}
         >
           Demo
           <RiComputerLine />
@@ -48,6 +56,7 @@ function MarchMadnessDetails() {
           size="lg"
           variant="outline-light d-flex gap-2"
           className="btn-code"
+          onClick={handleClickCode}
         >
           Code <AiFillGithub />
         </Button>

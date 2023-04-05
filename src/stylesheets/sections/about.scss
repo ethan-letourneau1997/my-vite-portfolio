@@ -1,0 +1,14 @@
+@use "../variables/colors.scss" as *;
+@use "../variables/typography.scss" as *;
+
+.About {
+  .pre-sub {
+    letter-spacing: 1px;
+    color: $red;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: $font-size-xxl;
+  }
+}
