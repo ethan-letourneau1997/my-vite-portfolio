@@ -1,104 +1,105 @@
+@use "../variables/colors.scss" as *;
 /* Default animation styles */
 
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight {
-  animation: fadeIn ease forwards;
-  animation-iteration-count: 1;
-}
+@media (min-width: 992px) {
+  /* Default animation styles */
 
-.one {
-  animation-duration: 5s;
-}
+  .im,
+  .and,
+  .make,
+  .websites,
+  .period {
+    color: $txt-secondary;
+  }
 
-.two {
-  animation-duration: 2s;
-}
+  .im,
+  .and,
+  .i,
+  .make,
+  .period {
+    animation: fadeIn ease forwards;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-delay: 2s;
+  }
 
-.three {
-  animation-duration: 2s;
-}
-
-.four {
-  animation-duration: 8s;
-}
-
-.five {
-  animation-duration: 9s;
-}
-
-.six {
-  animation-duration: 10s;
-}
-
-.seven {
-  animation-duration: 11s;
-}
-
-.eight {
-  animation-duration: 12s;
-}
-
-.slide-up {
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-.slide-up.slow {
-  animation: slide-up 3s ease-in-out forwards;
-  animation-delay: 3s;
-}
-
-.slide-up.medium {
-  animation: slide-up 3s ease-in-out forwards;
-  animation-delay: 2.5s;
-}
-
-.slide-up.fast {
-  animation: slide-up 3s ease-in-out forwards;
-  animation-delay: 2s;
-}
-
-@keyframes fadeIn {
-  0% {
+  .ethan,
+  .letourneau,
+  .websites {
+    animation: fadeIn ease forwards;
+    animation-iteration-count: 1;
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
+  .im {
+    animation-duration: 7s;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+
+  .ethan {
+    animation-duration: 2s;
   }
-}
 
-/* Media query to disable animations below lg breakpoint */
+  .letourneau {
+    animation-duration: 2s;
+  }
 
-@media (max-width: 992px) {
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight {
-    animation: none;
+  .and {
+    animation-duration: 7s;
+  }
+
+  .i {
+    animation-duration: 7s;
+  }
+
+  .make {
+    animation-duration: 7s;
+  }
+
+  .period {
+    animation-duration: 7s;
+  }
+
+  .websites {
+    animation-duration: 2s;
   }
 
   .slide-up {
-    animation: none;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .slide-up.slow {
+    animation: slide-up 3s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+
+  .slide-up.medium {
+    animation: slide-up 3s ease-in-out forwards;
+    animation-delay: 1.5s;
+  }
+
+  .slide-up.fast {
+    animation: slide-up 3s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }

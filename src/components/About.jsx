@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import headshot from "../assets/misc/ethan-headshot.png";
+import headshot from "../assets/misc/headshot.png";
 
 function About() {
   return (
-    <Container id="about" className="About py-5">
-      <Row className="text-center mt-5 pt-5">
+    <Container id="about" className="About py-5 ">
+      <Row className="text-center mt-md-5 pt-5 ">
         <Col>
           <span className="pre-sub ">ABOUT</span>
           <h3 className="pb-2 mb-4 mt-4">ETHAN LETOURNEAU</h3>

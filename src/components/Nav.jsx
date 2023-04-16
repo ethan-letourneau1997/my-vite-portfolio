@@ -6,9 +6,9 @@ function Navigation() {
   return (
     <Navbar bg="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">ethan letourneau</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">ethan letourneau</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="me-auto">
             <Nav.Link>
               <Link to="Home" smooth={true} duration={500}>

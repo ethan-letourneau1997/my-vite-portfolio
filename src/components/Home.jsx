@@ -5,17 +5,18 @@ function Home() {
     <Container fluid className="Home">
       <Row className="title-row">
         <h1>
-          <span className="one">i'm&nbsp;</span>
+          <span className="im">i'm&nbsp;</span>
           <span className="blue">
-            <span className="two">ethan </span>
-            <span className="three">letourneau</span>{" "}
+            <span className="ethan">ethan &nbsp;</span>
+            <span className="letourneau">letourneau</span>{" "}
           </span>
         </h1>
         <h1>
-          <span className="five">and&nbsp;</span>{" "}
-          <span className="six">i&nbsp;</span>
-          <span className="seven">make&nbsp;</span>{" "}
-          <span className="eight">websites.&nbsp;</span>
+          <span className="and">and&nbsp;</span>{" "}
+          <span className="i">i&nbsp;</span>
+          <span className="make">make&nbsp;</span>{" "}
+          <span className="websites">websites.&nbsp;</span>
+          {/* <span className="period">.</span> */}
         </h1>
       </Row>
       <Row className="btn-row">

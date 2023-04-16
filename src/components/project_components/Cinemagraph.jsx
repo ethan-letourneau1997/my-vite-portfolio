@@ -5,7 +5,7 @@ import ProjectImage from "../../assets/projects/tmdb_devices.png";
 function Cinegraph() {
   return (
     <Container fluid id="cinegraph" className="MarchMadness pt-5 mt-5 pb-5">
-      <Row>
+      <Row className="mt-5">
         <span className="pre-sub pb-4">PROJECT</span>
         <h3 className="pb-2">Cinegraph</h3>
         <p className="pb-5">

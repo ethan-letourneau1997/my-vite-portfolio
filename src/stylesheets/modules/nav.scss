@@ -5,8 +5,27 @@
   .nav-link {
     color: $txt-primary !important;
   }
+  .nav-link:hover {
+    color: $blue !important;
+  }
 
   .navbar-brand {
     color: $blue;
+  }
+  .navbar-brand:hover {
+    color: white;
+  }
+
+  .dropdown-menu {
+    background-color: $background;
+
+    .dropdown-item {
+      color: $txt-secondary;
+    }
+
+    .dropdown-item:hover {
+      color: $blue;
+      background-color: $background;
+    }
   }
 }
