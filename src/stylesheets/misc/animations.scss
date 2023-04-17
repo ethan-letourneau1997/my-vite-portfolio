@@ -16,7 +16,8 @@
   .and,
   .i,
   .make,
-  .period {
+  .period,
+  .navigation {
     animation: fadeIn ease forwards;
     animation-iteration-count: 1;
     opacity: 0;
@@ -31,34 +32,17 @@
     opacity: 0;
   }
 
-  .im {
+  .im,
+  .and,
+  .i,
+  .make,
+  .period,
+  .navigation {
     animation-duration: 7s;
   }
 
-  .ethan {
-    animation-duration: 2s;
-  }
-
-  .letourneau {
-    animation-duration: 2s;
-  }
-
-  .and {
-    animation-duration: 7s;
-  }
-
-  .i {
-    animation-duration: 7s;
-  }
-
-  .make {
-    animation-duration: 7s;
-  }
-
-  .period {
-    animation-duration: 7s;
-  }
-
+  .ethan,
+  .letourneau,
   .websites {
     animation-duration: 2s;
   }

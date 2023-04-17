@@ -15,8 +15,8 @@ function Home() {
           <span className="and">and&nbsp;</span>{" "}
           <span className="i">i&nbsp;</span>
           <span className="make">make&nbsp;</span>{" "}
-          <span className="websites">websites.&nbsp;</span>
-          {/* <span className="period">.</span> */}
+          <span className="websites">websites</span>
+          <span className="period">.</span>
         </h1>
       </Row>
       <Row className="btn-row">
