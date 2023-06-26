@@ -6,12 +6,12 @@ import { RiComputerLine } from "react-icons/ri";
 function CinemagraphDetails() {
   const handleClickCode = () => {
     window.open(
-      "https://github.com/ethan-letourneau1997/django_movies",
+      "https://github.com/ethan-letourneau1997/cinegraphNextTemplate",
       "_blank"
     );
   };
   const handleClickSite = () => {
-    window.open("https://cinegraph-lz3k3.ondigitalocean.app/", "_blank");
+    window.open("https://www.cinegraphtv.com/", "_blank");
   };
 
   return (
@@ -20,13 +20,13 @@ function CinemagraphDetails() {
         <Col xs={12} sm={12} md={6} className="d-flex flex-column gap-3">
           <span>Search</span>
           <p>
-            Find movies, tv, and people easily with a search functionality that
-            includes autocomplete.
+            Find movies, tv, and people easily with an autocomplete search
+            search.
           </p>
         </Col>
         <Col xs={12} md={6} className="d-flex flex-column gap-3">
           <span>API</span>
-          <p>Retrievs and displays data from the TMDB API u</p>
+          <p>Retrievs and displays data from the TMDB API </p>
         </Col>
         <Col xs={12} md={6} className="d-flex flex-column gap-3  pt-4">
           <span>Coming Soon</span>
@@ -37,7 +37,7 @@ function CinemagraphDetails() {
         </Col>
         <Col md={6} className="d-flex flex-column gap-3 pt-4">
           <span>Made With</span>
-          <p>Django, REST API, Python, HTML, SASS, JavaScript, Bootstrap</p>
+          <p>Next.js, React,Typescript, Fetch API, HTML, SASS, Mantine</p>
         </Col>
       </Row>
       <Row className="btn-row d-flex gap-4 pt-4">

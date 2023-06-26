@@ -1,6 +1,6 @@
 import ProjectDetails from "./CinemagraphDetails";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectImage from "../../assets/projects/tmdb_devices.png";
+import ProjectImage from "../../assets/projects/cinegraph.png";
 
 function Cinegraph() {
   return (

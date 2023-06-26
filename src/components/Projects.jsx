@@ -5,8 +5,8 @@ import Cinemagraph from "./project_components/Cinemagraph";
 function Projects() {
   return (
     <Container fluid className="Projects">
-      <MarchMadness />
       <Cinemagraph id="cinegraph" />
+      <MarchMadness />
     </Container>
   );
 }

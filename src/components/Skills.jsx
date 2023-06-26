@@ -16,7 +16,7 @@ function Skills() {
               <div>
                 <span>
                   <img src={checkBox} alt="checkbox" />
-                  HTML, CSS, JavaScript
+                  Typescript, HTML, CSS
                 </span>
                 <span>
                   <img src={checkBox} alt="checkbox" />
@@ -24,7 +24,7 @@ function Skills() {
                 </span>
                 <span>
                   <img src={checkBox} alt="checkbox" />
-                  Django, Node, Flask
+                  Next.js, Django, Node
                 </span>
                 <span>
                   <img src={checkBox} alt="checkbox" />
